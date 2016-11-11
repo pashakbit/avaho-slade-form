@@ -36,65 +36,15 @@
 <meta name="msapplication-TileColor" content="#9f00a7">
 <meta name="msapplication-TileImage" content="/mstile-144x144.png">
 <!--[if lt IE 9]>
-		<script src="/js/bs3/html5shiv.min.js"></script>
-		<script src="/js/bs3/respond.min.js"></script>
-		<![endif]-->
+	<script src="/js/bs3/html5shiv.min.js"></script>
+	<script src="/js/bs3/respond.min.js"></script>
+<![endif]-->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="js/min/all.js@20161110151631"></script>
 <script src="js/min/jquery.cookie.js"></script>
 <script src="js/min/jquery.izi.center.js"></script>
 <script src="js/bs3/bootstrap.min.js"></script>
 <script src="js/min/jquery.chosen.js"></script>
-<script>
-			var userGeolocationStatus="";
-		</script>
-<script>
-function GAEvent(category, action, label, value) {
-	if (typeof ga === 'undefined')
-		return;
-
-	ga('send', 'event', category, action, label, value);
-}
-</script>
-
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-55328675-1', 'auto');
-ga('require', 'displayfeatures');
-ga('send', 'pageview');
-</script>
-
-
-<script>
-(function (d, w, c) {
-    (w[c] = w[c] || []).push(function() {
-        try {
-            w.yaCounter26423631 = new Ya.Metrika({id:26423631,
-                    webvisor:false,
-                    clickmap:true,
-                    trackLinks:true,
-                    accurateTrackBounce:true});
-        } catch(e) { }
-    });
-
-    var n = d.getElementsByTagName("script")[0],
-        s = d.createElement("script"),
-        f = function () { n.parentNode.insertBefore(s, n); };
-    s.type = "text/javascript";
-    s.async = true;
-    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
-
-    if (w.opera == "[object Opera]") {
-        d.addEventListener("DOMContentLoaded", f, false);
-    } else { f(); }
-})(document, window, "yandex_metrika_callbacks");
-</script>
-<noscript><div><img src="http://mc.yandex.ru/watch/26423631" style="position:absolute; left:-9999px;" alt=""/></div></noscript>
-
 <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.5.5/slick.css"/>
 </head>
 <body>
@@ -402,120 +352,121 @@ avaho.ru
                     <button class="btn btn-warning" onclick="GAEvent('click-search', 'click', '');">Найти</button>
                 </div>
 
-                <a data-toggle="collapse" href="index.html#extendedLink" aria-expanded="true" aria-controls="extendedLink" class="btn btn-link toggle-extended">
+                <a id="extendBtn" class="btn btn-link toggle-extended">
                     <i class="extended-drop fa fa-angle-right"></i> ещё детали
                 </a>
-
-                <div class="collapse" id="extendedLink" aria-expanded="true">
-
-                    <hr>
-
-
-                    <!-- Площадь -->
-                    <div id="square_group" class="form-group square" style="margin-right: 20px">
-                        <label>Площадь квартиры<span id="square_unit">, м<sup>2</sup></span></label><br><span style="position: relative"><input type="text" maxlength="5" name="square_ot" class="form-control input-sm house-square-ot hasclear" placeholder="от"><span class="input__clear clearer"></span></span><span style="position: relative"><input type="text" maxlength="5" name="square_do" class="form-control input-sm house-square-do hasclear" placeholder="до"><span class="input__clear clearer"></span></span>
-                    </div>
-
-
-                    <div class="form-group" style="position: relative; margin: 10px 15px 0 0">
-                     <label>От застройщика</label><br>
-                        <span style="position:relative">
-												<input id="firmSuggest" style="width: 286px;" value="" class="form-control input-sm hasclear" type="text" autocomplete="off" placeholder="Пример: Urban Group">
-
-						<span class="input__clear clearer" data-clear="firms"></span>
-                        </span>
-
-                        <input id="firms" name="firms" type="hidden" value="">
-                    </div>
-
-
-                    <div class="form-group" style="margin: 12px 20px 0 0">
-                        <label>До метро не более</label><br>
-                    <span style="position: relative;">
-                        <input name="metro-time" class="form-control input-sm hasclear" maxlength="3" type="text" style="width: 80px; margin-top: -2px; padding: 4px 5px" placeholder="минут"><span class="input__clear clearer"></span>
-                    </span>
-                    <span style="position: relative; margin-right: 2px" class="do-metro-options">
-                        <select class="chosen-select" name="metro-type">
-                            <option value="">пешком</option>
-                            <option value="driving">на автомобиле</option>
-                            <option value="transit">общ. транспортом</option>
-                        </select>
-                    </span>
-                    </div>
-
-                    <div class="clearfix"></div>
-
-
-                    <div class="form-group has-helper" style="margin-top: 24px; margin-right: 20px;">
-					<span class="check-squared">
-						<input type="checkbox" value="1" id="sellform1" name="sellform[]">
-						<label for="sellform1"></label>
-					</span>
-                        <label for="sellform1" style="font-size: 11px">ДДУ (ФЗ-214)</label>
-                        <a tabindex="0"
-                           data-toggle="popover"
-                           data-trigger="focus"
-                           data-html="true"
-                           data-content="<span class=close>&times;</span><p style='margin-bottom: 0'>Самый надежный способ покупки квартиры в новостройке. Права и интересы покупателя защищаются федеральным законом №214.</p></div>"
-                        ><i class="fa fa-question-circle"></i></a>
-                    </div>
-
-                    <div class="form-group" style="margin-top: 24px; margin-right: 20px;">
-					<span class="check-squared">
-						<input type="checkbox" value="1" id="apartment" name="apartment">
-						<label for="apartment"></label>
-					</span>
-                        <label for="apartment" style="font-size: 11px">апартаменты</label>
-                    </div>
-
-                    <div class="form-group" style="margin-top: 24px; margin-right: 20px;">
-					<span class="check-squared">
-						<input type="checkbox" value="1" id="mjk" name="mjk">
-						<label for="mjk"></label>
-					</span>
-                        <label for="mjk" style="font-size: 11px">малоэтажные</label>
-                    </div>
-
-                    <div class="form-group" style="margin-top: 24px; margin-right: 20px;">
-					<span class="check-squared">
-						<input type="checkbox" value="1" id="otdelka" name="otdelka">
-						<label for="otdelka"></label>
-					</span>
-                        <label for="otdelka" style="font-size: 11px">с отделкой</label>
-                    </div>
-                    <div class="clearfix"></div>
-
-                    <div class="form-group" style="margin-right: 45px">
-                        <label style="margin-bottom: 10px">Машиноместа</label>
-                        <div class="clearfix"></div>
-                        <span class="check-squared">
-                          <input type="checkbox" value="подземный паркинг" id="parking1" name="parking[]">
-                          <label for="parking1"></label>
-                      </span>
-                      <label for="parking1" style="margin-right: 20px; font-size: 11px">подземный паркинг</label>
-
-                      <span class="check-squared">
-                          <input type="checkbox" value="наземный многоуровневый паркинг" id="parking2" name="parking[]">
-                          <label for="parking2"></label>
-                      </span>
-                      <label for="parking2" style="margin-right: 20px; font-size: 11px">наземный многоуровневый паркинг</label>
-                    </div>
-
-                    <div class="form-group">
-                        <label style="margin-bottom: 10px">Архитектурный стиль</label>
-                        <div class="clearfix"></div>
-                        <span class="check-squared">
-                            <input type="checkbox" value="1" id="arc_style_id1" name="arc_style_id">
-                            <label for="arc_style_id1"></label>
-                        </span>
-                        <label for="arc_style_id1" style="margin-right: 20px; font-size: 11px">лофт</label>
-                    </div>
-
-                </div>
 
             </div>
         </div>
 
+    </div>
+
+    <div class="container_coll_apse">
+        <div class="coll_apse" id="extendedLink" aria-expanded="true">
+
+            <hr>
+
+
+            <!-- Площадь -->
+            <div id="square_group" class="form-group square" style="margin-right: 20px">
+                <label>Площадь квартиры<span id="square_unit">, м<sup>2</sup></span></label><br><span style="position: relative"><input type="text" maxlength="5" name="square_ot" class="form-control input-sm house-square-ot hasclear" placeholder="от"><span class="input__clear clearer"></span></span><span style="position: relative"><input type="text" maxlength="5" name="square_do" class="form-control input-sm house-square-do hasclear" placeholder="до"><span class="input__clear clearer"></span></span>
+            </div>
+
+
+            <div class="form-group" style="position: relative; margin: 10px 15px 0 0">
+             <label>От застройщика</label><br>
+                <span style="position:relative">
+                                        <input id="firmSuggest" style="width: 286px;" value="" class="form-control input-sm hasclear" type="text" autocomplete="off" placeholder="Пример: Urban Group">
+
+                <span class="input__clear clearer" data-clear="firms"></span>
+                </span>
+
+                <input id="firms" name="firms" type="hidden" value="">
+            </div>
+
+
+            <div class="form-group" style="margin: 12px 20px 0 0">
+                <label>До метро не более</label><br>
+            <span style="position: relative;">
+                <input name="metro-time" class="form-control input-sm hasclear" maxlength="3" type="text" style="width: 80px; margin-top: -2px; padding: 4px 5px" placeholder="минут"><span class="input__clear clearer"></span>
+            </span>
+            <span style="position: relative; margin-right: 2px" class="do-metro-options">
+                <select class="chosen-select" name="metro-type">
+                    <option value="">пешком</option>
+                    <option value="driving">на автомобиле</option>
+                    <option value="transit">общ. транспортом</option>
+                </select>
+            </span>
+            </div>
+
+            <div class="clearfix"></div>
+
+
+            <div class="form-group has-helper" style="margin-top: 24px; margin-right: 20px;">
+            <span class="check-squared">
+                <input type="checkbox" value="1" id="sellform1" name="sellform[]">
+                <label for="sellform1"></label>
+            </span>
+                <label for="sellform1" style="font-size: 11px">ДДУ (ФЗ-214)</label>
+                <a tabindex="0"
+                   data-toggle="popover"
+                   data-trigger="focus"
+                   data-html="true"
+                   data-content="<span class=close>&times;</span><p style='margin-bottom: 0'>Самый надежный способ покупки квартиры в новостройке. Права и интересы покупателя защищаются федеральным законом №214.</p></div>"
+                ><i class="fa fa-question-circle"></i></a>
+            </div>
+
+            <div class="form-group" style="margin-top: 24px; margin-right: 20px;">
+            <span class="check-squared">
+                <input type="checkbox" value="1" id="apartment" name="apartment">
+                <label for="apartment"></label>
+            </span>
+                <label for="apartment" style="font-size: 11px">апартаменты</label>
+            </div>
+
+            <div class="form-group" style="margin-top: 24px; margin-right: 20px;">
+            <span class="check-squared">
+                <input type="checkbox" value="1" id="mjk" name="mjk">
+                <label for="mjk"></label>
+            </span>
+                <label for="mjk" style="font-size: 11px">малоэтажные</label>
+            </div>
+
+            <div class="form-group" style="margin-top: 24px; margin-right: 20px;">
+            <span class="check-squared">
+                <input type="checkbox" value="1" id="otdelka" name="otdelka">
+                <label for="otdelka"></label>
+            </span>
+                <label for="otdelka" style="font-size: 11px">с отделкой</label>
+            </div>
+            <div class="clearfix"></div>
+
+            <div class="form-group" style="margin-right: 45px">
+                <label style="margin-bottom: 10px">Машиноместа</label>
+                <div class="clearfix"></div>
+                <span class="check-squared">
+                  <input type="checkbox" value="подземный паркинг" id="parking1" name="parking[]">
+                  <label for="parking1"></label>
+              </span>
+              <label for="parking1" style="margin-right: 20px; font-size: 11px">подземный паркинг</label>
+
+              <span class="check-squared">
+                  <input type="checkbox" value="наземный многоуровневый паркинг" id="parking2" name="parking[]">
+                  <label for="parking2"></label>
+              </span>
+              <label for="parking2" style="margin-right: 20px; font-size: 11px">наземный многоуровневый паркинг</label>
+            </div>
+
+            <div class="form-group">
+                <label style="margin-bottom: 10px">Архитектурный стиль</label>
+                <div class="clearfix"></div>
+                <span class="check-squared">
+                    <input type="checkbox" value="1" id="arc_style_id1" name="arc_style_id">
+                    <label for="arc_style_id1"></label>
+                </span>
+                <label for="arc_style_id1" style="margin-right: 20px; font-size: 11px">лофт</label>
+            </div>
+        </div>
     </div>
 
 </form>
@@ -813,18 +764,9 @@ $('#location_list_btn').click(function() {
 
 //////////////////////////////////////////////////////////////////////////////////////////////
 
-$('a[data-toggle="collapse"]').click(function () {
+$('#extendBtn').click(function () {
 	$(this).find('i.extended-drop').toggleClass('fa-angle-down fa-angle-right');
-});
-$('input', '#extendedLink').each(function() {
-	var $extendedLink = $('#extendedLink'),
-		$this = $(this),
-		isSet = ($this.attr('type') === 'checkbox') ? this.checked : !!$this.val();
-
-	if (isSet && $extendedLink.hasClass('collapse')) {
-		$extendedLink.addClass('in');
-		$('i.extended-drop').removeClass('fa-angle-right').addClass('fa-angle-down');
-	}
+    $('#extendedLink').parent().toggleClass('in');
 });
 
 /*------------------------------------------------------------------------------------------*/
@@ -1603,53 +1545,5 @@ $(function() {
 			})
 		});
 		</script>
-
-<script>
-function userGeoLocation(url) {
-	if (userGeolocationStatus === 'ok') {
-		location = url;
-		return;
-	}
-
-	if (userGeolocationStatus === 'denied') {
-		alert("Геолокация запрещена настройками безопасности.");
-		return;
-	}
-	if (userGeolocationStatus === 'unavailable') {
-		alert("Геолокация недоступна.");
-		return;
-	}
-
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(
-			function (position) {
-				$.get(defAjaxUrl, {
-					geolocation: 'ok',
-					lat: position.coords.latitude,
-					lng: position.coords.longitude
-				}, function() {location = url});
-			},
-			function (error) {
-				switch(error.code) {
-					case error.PERMISSION_DENIED:		userGeolocationStatus = "denied";		break;
-					case error.POSITION_UNAVAILABLE:	userGeolocationStatus = "unavailable";	break;
-					case error.TIMEOUT:					userGeolocationStatus = "timeout";		break;
-					case error.UNKNOWN_ERROR:			userGeolocationStatus = "unknown";		break;
-				}
-				$.get(defAjaxUrl, {geolocation:userGeolocationStatus, lat:0, lng:0});
-				alert("Данные о местоположении не получены.");
-			}
-		);
-    }
-	else {
-        alert("Геолокация не поддерживается вашим браузером.");
-    }
-}
-
-if (navigator.geolocation && userGeolocationStatus === '') {
-	// direct link handler
-	}
-</script>
-
 	</body>
 </html>
