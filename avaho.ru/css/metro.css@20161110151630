@@ -1,0 +1,2284 @@
+.map {
+    background-image: url(/i/moscow-metro-map-8.png);
+    background-repeat: no-repeat;
+    /*width: 1600px;*/
+    height: 1970px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+.map .location-item-block.checked {
+    border: 1px solid #8CC152;
+    background-color: rgba(255, 227, 72, 0.35);
+}
+.map .location-item-block.checked:hover {
+    border: 1px solid #669f28 !important;
+    background-color: rgba(255, 227, 72, 0.5);
+}
+.map span {
+    font-size: 0;
+    text-decoration: none;
+    position: absolute;
+    color: #ccc;
+    height: 32px;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box
+}
+.map span.location-item-block:hover {
+    background: rgba(255, 255, 255, .4);
+    border: 1px dotted;
+    cursor: pointer
+}
+.metro-select,
+.metro-select:hover {
+    width: 24px!important;
+    height: 22px!important;
+    z-index: 100;
+    background-repeat: no-repeat;
+    background-image: url(/i/checkednew.png)
+}
+
+.metro-select {
+    display: none
+}
+
+.metro-select.checked {
+    display: block;
+    z-index: 3
+}
+
+
+/* ----------------------------------------------------------------------------
+* --------------------------------------------------------------------------------
+* --------------------------------------------------------------------------------*/
+
+
+.map .a_aviamotornaya {
+    top: 865px;
+    left: 1314px;
+    width: 136px
+}
+.map .a_ajeroport {
+    top: 469px;
+    left: 479px;
+    width: 87px
+}
+.map .a_akademicheskaya {
+    top: 1408px;
+    left: 527px;
+    width: 129px
+}
+.map .a_aleksandrovskii-sad {
+    left: 708px;
+    top: 959px;
+    width: 177px
+}
+.map .a_alekseevskaya {
+    left: 1027px;
+    top: 449px;
+    width: 115px
+}
+.map .a_altufqevo {
+    width: 93px;
+    left: 759px;
+    top: 135px
+}
+.map .a_annino {
+    width: 85px;
+    left: 742px;
+    top: 1796px
+}
+.map .a_arbatskaya-arbatsko-pokrovskaya {
+width: 65px;
+left: 418px;
+top: 527px
+}
+.map .a_arbatskaya-filevskaya {
+    width: 90px;
+    left: 637px;
+    top: 869px
+}
+.map .a_avtozavodskaya {
+    width: 129px;
+    left: 957px;
+    top: 1344px
+}
+.map .a_technopark {
+    width: 102px;
+    left: 960px;
+    top: 1449px
+}
+.map .a_babushkinskaya {
+    width: 122px;
+    left: 1023px;
+    top: 181px
+}
+.map .a_bagrationovskaya {
+    width: 144px;
+    left: 104px;
+    top: 964px
+}
+.map .a_barrikadnaya {
+    width: 109px;
+    left: 518px;
+    top: 747px;
+}
+.map .a_baumanskaya {
+    width: 94px;
+    left: 1205px;
+    top: 754px
+}
+.map .a_begovaya {
+    width: 84px;
+    left: 316px;
+    top: 735px
+}
+.map .a_belorysskaya-kolcevaya {
+width: 112px;
+left: 438px;
+top: 649px;
+height: 87px;
+}
+.map .a_arbatskaya {
+    width: 89px;
+    left: 688px;
+    top: 898px
+}
+.s_arbatskaya {
+    left: 708px;
+    top: 929px
+}
+.map .a_tretqyakovskaya {
+    left: 798px;
+    top: 1063px;
+    width: 127px
+}
+.map .a_tretyakovskaya-kalininskaya {
+left: 525px;
+top: 647px;
+width: 90px
+}
+.map .a_smolenskaya-arbatsko-pokrovskaya {
+width: 79px;
+left: 321px;
+top: 557px
+}
+.map .a_kyncevskaya-arbatsko-pokrovskaya {
+left: 39px;
+top: 354px;
+width: 75px
+}
+.map .a_kyncevskaya-filevskaya {
+    left: 89px;
+    top: 712px;
+    width: 118px
+}
+.map .a_bulvar_rokossovskogo,
+.map .a_bulvar_rokossovskogo_mck {
+    left: 1176px;
+    top: 396px;
+    width: 191px;
+    height: 29px
+}
+
+.map .a_belokamennaya {
+    left: 1139px;
+    top: 362px;
+    width: 135px;
+    height: 29px
+}
+
+.map .a_kievskaya-arbatsko-pokrovskaya,
+.map .a_kievskaya-filevskaya,
+.map .a_kievskaya-kolcevaya {
+    left: 405px;
+    top: 899px;
+    width: 84px
+}
+.map .a_ulitca_akademika_yangelya {
+    width: 181px;
+    left: 740px;
+    top: 1760px;
+    height: 33px
+}
+.map .a_volgogradskiji_prospekt {
+    width: 197px;
+    left: 1300px;
+    top: 1104px;
+    height: 33px;
+}
+.map .a_taganskaya,
+.map .a_taganskaya_kolco {
+    left: 1037px;
+    top: 972px;
+    width: 89px
+}
+.map .a_smolenskaya-filevskaya {
+    left: 524px;
+    top: 851px;
+    width: 102px;
+}
+.map .a_prospekt_vernadskogo {
+    width: 119px;
+    left: 336px;
+    top: 1360px;
+    height: 51px
+}
+.map .a_universitet {
+    width: 109px;
+    left: 336px;
+    top: 1302px
+}
+.map .a_prospekt-mira,
+.map .a_prospekt-mira-kolcevaya {
+    width: 135px;
+    left: 958px;
+    top: 544px
+}
+.map .a_ylica-1905-goda {
+width: 60px;
+height: 30px;
+left: 171px;
+top: 396px
+}
+.map .a_park-kyltyri,
+.map .a_park-kyltyri-kolcevaya {
+width: 82px;
+left: 454px;
+top: 1046px;
+height: 45px;
+}
+.map .a_komsomolskaya,
+.map .a_komsomolskaya-kolcevaya {
+width: 163px;
+left: 1086px;
+top: 635px;
+height: 59px;
+}
+.map .a_bulqvar_dmitriya_donskogo {
+    width: 144px;
+    height: 41px;
+    left: 744px;
+    top: 1828px
+}
+.map .a_preobrazhenskaya_ploschadq {
+    width: 167px;
+    height: 30px;
+    left: 1196px;
+    top: 531px
+}
+.map .a_petrovskorazumovskaya {
+    width: 208px;
+    left: 735px;
+    top: 328px
+}
+.map .a_paveleckaya,
+.map .a_paveleckaya-kolcevaya {
+width: 158px;
+left: 961px;
+top: 1175px;
+height: 70px
+}
+.map .a_oktyabrskaya-kolcevaya {
+width: 70px;
+left: 421px;
+top: 685px
+}
+.map .a_nahimovskiji_prospekt {
+    width: 118px;
+    height: 37px;
+    left: 743px;
+    top: 1525px
+}
+.map .a_biblioteka-im-lenina {
+    width: 185px;
+    left: 725px;
+    top: 1005px;
+}
+.map .a_sretenskii-bylvar {
+    width: 98px;
+    height: 45px;
+    left: 924px;
+    top: 646px;
+}
+.map .a_vorobqyevjy_gorjy {
+    width: 135px;
+    height: 36px;
+    left: 336px;
+    top: 1245px
+}
+.map .a_volokolamskaya {
+    width: 151px;
+    left: 88px;
+    top: 475px
+}
+.map .a_slavyanskiji_bulqvar {
+width: 98px;
+left: 35px;
+top: 1119px;
+height: 47px;
+}
+.map .a_bitcevskii-park {
+    width: 145px;
+    left: 407px;
+    top: 1786px;
+    height: 33px
+}
+.map .a_belyaevo {
+    width: 71px;
+    left: 528px;
+    top: 1575px
+}
+.map .a_bibirevo {
+    width: 86px;
+    left: 759px;
+    top: 176px
+}
+.map .a_borovitckaya {
+    width: 105px;
+    left: 554px;
+    top: 958px
+}
+.map .a_botanicheskii-sad {
+    width: 148px;
+    height: 28px;
+    left: 1023px;
+    top: 273px
+}
+.map .a_almaatinskaya {
+    width: 138px;
+    left: 1263px;
+    top: 1837px
+}
+.map .a_bratislavskaya {
+    width: 121px;
+    left: 1175px;
+    top: 1574px
+}
+.map .a_tcaritcjyno {
+    width: 105px;
+    left: 960px;
+    top: 1655px
+}
+.map .a_chehovskaya {
+    width: 89px;
+    left: 749px;
+    top: 805px;
+}
+.map .a_cherkizovskaya {
+    width: 120px;
+    left: 1097px;
+    top: 483px
+}
+.map .a_chertanovskaya {
+    width: 120px;
+    left: 745px;
+    top: 1660px
+}
+.map .a_chistjye_prudjy {
+    width: 120px;
+    left: 996px;
+    top: 728px
+}
+.map .a_chkalovskaya {
+    width: 99px;
+    left: 1003px;
+    top: 781px
+}
+.map .a_tcvetnoji_bulqvar {
+    width: 72px;
+    left: 718px;
+    top: 678px
+}
+.map .a_delovoi-centr {
+width: 75px;
+height: 60px;
+left: 269px;
+top: 930px;
+}
+.map .a_dinamo {
+    width: 76px;
+    left: 479px;
+    top: 508px
+}
+.map .a_dmitrovskaya {
+    width: 124px;
+    left: 665px;
+    top: 451px
+}
+.map .a_dobrininskaya {
+width: 90px;
+left: 391px;
+top: 734px
+}
+.map .a_domodedovskaya {
+    width: 131px;
+    left: 960px;
+    top: 1759px
+}
+.map .a_dostoevskaya {
+width: 105px;
+left: 834px;
+top: 496px;
+}
+.map .a_dubrovka {
+    width: 86px;
+    left: 1069px;
+    top: 1258px;
+}
+.map .a_jelektrozavodskaya {
+    width: 163px;
+    left: 1233px;
+    top: 721px
+}
+.map .a_filyevskiji_park {
+    width: 102px;
+    left: 105px;
+    top: 802px;
+    height: 47px;
+}
+
+.map .a_fili {
+    width: 63px;
+    left: 105px;
+    top: 1004px
+}
+.map .a_frunzenskaya {
+    width: 93px;
+    left: 439px;
+    top: 1090px
+}
+.map .a_izmajilovskaya {
+    width: 132px;
+    left: 1392px;
+    top: 487px
+}
+.map .a_kahovskaya {
+    width: 85px;
+    left: 617px;
+    top: 1598px
+}
+.map .a_kaluzhskaya {
+    width: 93px;
+    left: 528px;
+    top: 1534px
+}
+.map .a_kantemirovskaya {
+    width: 139px;
+    left: 960px;
+    top: 1604px
+}
+.map .a_kashirskaya-kahovskaja,
+.map .a_kashirskaya-zamoskvoreckaja {
+    width: 93px;
+    left: 961px;
+    top: 1540px
+}
+.map .a_kojyhovskaya {
+    width: 112px;
+    left: 1175px;
+    top: 1359px
+}
+.map .a_kolomenskaya {
+    width: 116px;
+    left: 961px;
+    top: 1496px
+}
+.map .a_konqkovo {
+    width: 83px;
+    left: 527px;
+    top: 1617px
+}
+.map .a_krasnie-vorota {
+    width: 134px;
+    height: 30px;
+    left: 1037px;
+    top: 692px;
+}
+.map .a_krasnogvardejiskaya {
+    width: 198px;
+    left: 1014px;
+    top: 1839px
+}
+.map .a_krasnopresnenskaya {
+    width: 153px;
+    left: 508px;
+    top: 800px;
+}
+.map .a_krasnoselqskaya {
+    width: 133px;
+    left: 1127px;
+    top: 599px
+}
+.map .a_krestyanskaya-zastava {
+    width: 116px;
+    height: 46px;
+    left: 1110px;
+    top: 1099px;
+}
+.map .a_krjylatskoe {
+    width: 105px;
+    left: 88px;
+    top: 603px
+}
+.map .a_kropotkinskaya {
+    width: 127px;
+    left: 572px;
+    top: 1046px
+}
+.map .a_kyrskaya,
+.map .a_kyrskaya-kolcevaya {
+    width: 107px;
+    left: 1146px;
+    top: 774px;
+    height: 47px;
+}
+.map .a_kytyzovskaya {
+    width: 97px;
+    left: 166px;
+    top: 1021px
+}
+.map .a_kuzqminki {
+    width: 91px;
+    left: 1392px;
+    top: 1245px;
+}
+.map .a_kyzneckii-most {
+    width: 139px;
+    height: 32px;
+    left: 796px;
+    top: 747px
+}
+.map .a_lesoparkovaya {
+    width: 132px;
+    left: 562px;
+    top: 1787px
+}
+.map .a_leninskiji_prospekt {
+width: 94px;
+left: 525px;
+top: 1281px;
+height: 46px;
+}
+.map .a_lyublino {
+    width: 83px;
+    left: 1176px;
+    top: 1518px
+}
+.map .a_lubyanka {
+    width: 75px;
+    left: 896px;
+    top: 821px
+}
+.map .a_marina_roshcha {
+    width: 127px;
+    left: 834px;
+    top: 463px
+}
+.map .a_marino {
+    width: 89px;
+    left: 1176px;
+    top: 1628px
+}
+.map .a_marksistskaya {
+    width: 120px;
+    left: 1118px;
+    top: 1027px
+}
+.map .a_mayakovskaya {
+    width: 103px;
+    left: 606px;
+    top: 668px
+}
+.map .a_medvedkovo {
+    width: 111px;
+    left: 1022px;
+    top: 134px
+}
+.map .a_mejdynarodnaya {
+width: 103px;
+left: 184px;
+top: 447px
+}
+.map .a_mendeleevskaya {
+    width: 131px;
+    left: 683px;
+    top: 596px
+}
+.map .a_mitino {
+    width: 79px;
+    left: 88px;
+    top: 431px
+}
+.map .a_molodyezhnaya {
+    width: 111px;
+    left: 86px;
+    top: 646px
+}
+.map .a_nagatinskaya {
+    width: 120px;
+    left: 744px;
+    top: 1450px
+}
+.map .a_nagornaya {
+    width: 93px;
+    left: 743px;
+    top: 1488px
+}
+.map .a_novjye_cheryemushki {
+    width: 155px;
+    left: 528px;
+    top: 1491px
+}
+.map .a_novogireevo {
+    width: 123px;
+    left: 1451px;
+    top: 735px
+}
+.map .a_novokosino {
+    width: 119px;
+    left: 1477px;
+    top: 703px
+}
+.map .a_novokuznetckaya {
+    width: 130px;
+    left: 959px;
+    top: 1023px
+}
+.map .a_novoslobodskaya {
+    width: 137px;
+    left: 720px;
+    top: 560px
+}
+.map .a_ohotnii-ryad {
+width: 58px;
+height: 23px;
+left: 484px;
+top: 481px
+}
+.map .a_oktyabrqskoe_pole {
+    width: 112px;
+    height: 41px;
+    left: 284px;
+    top: 516px
+}
+.map .a_orehovo {
+    width: 92px;
+    left: 960px;
+    top: 1707px
+}
+.map .a_otradnoe {
+    width: 88px;
+    left: 759px;
+    top: 220px
+}
+.map .a_park_pobedjy {
+    width: 72px;
+    height: 45px;
+    left: 176px;
+    top: 1121px
+}
+.map .a_partizanskaya {
+    width: 113px;
+    left: 1358px;
+    top: 580px
+}
+.map .a_pechatniki {
+    width: 91px;
+    left: 1176px;
+    top: 1412px
+}
+.map .a_perovo {
+    width: 67px;
+    left: 1419px;
+    top: 764px;
+    height: 32px;
+}
+.map .a_pervomajiskaya {
+    width: 132px;
+    left: 1392px;
+    top: 448px
+}
+.map .a_pionerskaya {
+    width: 102px;
+    left: 105px;
+    top: 766px
+}
+.map .a_planernaya {
+    width: 93px;
+    left: 287px;
+    top: 214px
+}
+.map .a_ploschadq_ilqicha {
+    width: 94px;
+    height: 48px;
+    left: 1266px;
+    top: 905px
+}
+.map .a_ploshad-revolucii {
+    width: 221px;
+    left: 854px;
+    top: 936px;
+}
+.map .a_polezhaevskaya {
+    width: 115px;
+    left: 315px;
+    top: 633px
+}
+.map .a_polyanka {
+    width: 72px;
+    left: 744px;
+    top: 1116px;
+}
+.map .a_prazhskaya {
+    width: 87px;
+    left: 743px;
+    top: 1728px
+}
+.map .a_profsoyuznaya {
+    width: 118px;
+    left: 527px;
+    top: 1449px
+}
+.map .a_proletarskaya {
+    width: 121px;
+    left: 1253px;
+    top: 1068px
+}
+.map .a_zhulebino {
+    width: 99px;
+    left: 1392px;
+    top: 1538px
+}
+.map .a_kotelniki {
+    width: 112px;
+    left: 1391px;
+    top: 1605px;
+    height: 32px;
+}
+.map .a_pushkinskaya {
+    width: 100px;
+left: 674px;
+top: 747px;
+}
+.map .a_rechnoji_vokzal {
+    width: 121px;
+    left: 479px;
+    top: 213px
+}
+.map .a_rizhskaya {
+    width: 83px;
+    left: 1009px;
+    top: 491px
+}
+.map .a_rimskaya {
+    width: 90px;
+    left: 1156px;
+    top: 871px
+}
+.map .a_ryazanskiji_prospekt {
+    width: 105px;
+    height: 49px;
+    left: 1392px;
+    top: 1311px;
+}
+.map .a_savyelovskaya {
+width: 124px;
+left: 665px;
+top: 488px;
+height: 48px;
+}
+.map .a_semyenovskaya {
+    width: 109px;
+    left: 1262px;
+    top: 691px
+}
+.map .a_serpyhovskaya {
+    width: 113px;
+    left: 738px;
+    top: 1215px
+}
+.map .a_sevastopolskaya {
+    width: 142px;
+    left: 744px;
+    top: 1624px
+}
+.map .a_shabolovskaya {
+    width: 111px;
+    left: 584px;
+    top: 1220px
+}
+.map .a_schelkovskaya {
+    width: 150px;
+    left: 1391px;
+    top: 371px;
+    height: 70px;
+}
+.map .a_shodnenskaya {
+    width: 114px;
+    left: 286px;
+    top: 255px
+}
+.map .a_shosse_jentuziastov {
+    width: 163px;
+    height: 32px;
+    left: 1320px;
+    top: 794px;
+}
+.map .a_schukinskaya {
+    width: 96px;
+    left: 288px;
+    top: 375px
+}
+.map .a_sokol {
+    width: 60px;
+    left: 479px;
+    top: 431px
+}
+.map .a_sokolqniki {
+    width: 105px;
+    left: 1163px;
+    top: 565px
+}
+.map .a_sportivnaya {
+width: 99px;
+left: 376px;
+top: 1133px;
+}
+.map .a_strogino {
+    width: 104px;
+    left: 88px;
+    top: 560px
+}
+.map .a_stydencheskaya {
+    width: 113px;
+    left: 318px;
+    top: 1010px
+}
+.map .a_sviblovo {
+    width: 90px;
+    left: 1023px;
+    top: 228px
+}
+.map .a_suharevskaya {
+    width: 102px;
+    left: 922px;
+    top: 611px;
+}
+.map .a_teatralnaya {
+    width: 100px;
+    left: 842px;
+    top: 883px
+}
+.map .a_tekstilqschiki {
+    width: 131px;
+    left: 1362px;
+    top: 1170px
+}
+.map .a_tyepljyji_stan {
+    width: 120px;
+    left: 527px;
+    top: 1658px
+}
+.map .a_timiryazevskaya {
+    width: 140px;
+    left: 664px;
+    top: 414px
+}
+.map .a_trubnaya {
+    width: 68px;
+    left: 827px;
+    top: 631px
+}
+.map .a_tverskaya {
+width: 75px;
+height: 28px;
+left: 628px;
+top: 820px;
+}
+.map .a_tulqskaya {
+    width: 93px;
+    left: 740px;
+    top: 1290px
+}
+.map .a_tyrgenevskaya {
+    width: 114px;
+    left: 835px;
+    top: 711px;
+    height: 32px;
+}
+.map .a_tushinskaya {
+    width: 121px;
+    left: 287px;
+    top: 294px
+}
+.map .a_spartak {
+    width: 81px;
+    top: 336px;
+    left: 288px
+}
+.map .a_troparevo {
+    width: 104px;
+    top: 1491px;
+    left: 335px
+}
+.s_troparevo {
+    top: 1490px;
+    left: 316px
+}
+.a_rumyantsevo {
+    width: 103px;
+    top: 1547px;
+    left: 336px
+}
+.s_rumyantsevo {
+    top: 1549px;
+    left: 315px
+}
+.a_salarevo {
+    width: 101px;
+    top: 1604px;
+    left: 335px
+}
+.s_salarevo {
+    top: 1603px;
+    left: 314px
+}
+.map .a_dobrjyninskaya {
+    width: 122px;
+    top: 1153px;
+    left: 760px
+}
+.map .a_oktyabrskaya {
+    width: 112px;
+    top: 1138px;
+    left: 515px
+}
+.s_belorusskaya {
+    left: 539px;
+    top: 645px
+}
+.s_park_kulqturjy {
+    left: 537px;
+    top: 1044px;
+}
+.s_kuntcevskaya {
+    left: 66px;
+    top: 725px
+}
+.s_kashirskaya {
+    left: 938px;
+    top: 1553px
+}
+.s_ohotnyy_ryad {
+    left: 811px;
+    top: 882px
+}
+.map .a_vjystavochnaya {
+    left: 296px;
+    top: 851px;
+    width: 107px
+}
+.s_vjystavochnaya {
+    left: 318px;
+    top: 880px
+}
+.map .a_smolenskaya {
+    width: 101px;
+    left: 524px;
+    top: 896px;
+}
+.map .a_mezhdunarodnaya {
+    left: 117px;
+    top: 853px;
+    width: 149px
+}
+.s_mezhdunarodnaya {
+    left: 221px;
+    top: 882px
+}
+.s_smolenskaya {
+    left: 563px;
+    top: 927px;
+}
+.map .a_ohotnyy_ryad {
+    width: 76px;
+    left: 735px;
+    top: 855px;
+    height: 44px
+}
+.s_oktyabrqskaya {
+    left: 616px;
+    top: 1126px
+}
+.s_dobrjyninskaya {
+    top: 1182px;
+    left: 740px
+}
+.s_prospekt_mira {
+    left: 937px;
+    top: 530px
+}
+.s_paveletckaya {
+    left: 938px;
+    top: 1177px
+}
+.s_komsomolqskaya {
+    left: 1067px;
+    top: 625px
+}
+.s_kurskaya {
+    left: 1126px;
+    top: 769px
+}
+.map .a_ulitca_1905_goda {
+width: 93px;
+top: 773px;
+left: 342px;
+height: 46px;
+}
+.s_ulitca_1905_goda {
+    top: 766px;
+    left: 426px
+}
+.map .a_yugozapadnaya {
+    width: 122px;
+    left: 335px;
+    top: 1433px
+}
+.map .a_yuzhnaya {
+    width: 65px;
+    left: 744px;
+    top: 1693px
+}
+.map .a_varshavskaya {
+    width: 129px;
+    left: 795px;
+    top: 1570px
+}
+.map .a_vdnh {
+    width: 71px;
+    left: 1027px;
+    top: 416px
+}
+.map .a_vjyhino {
+    width: 95px;
+    left: 1392px;
+    top: 1392px;
+}
+.map .a_vladikino {
+    width: 99px;
+    left: 759px;
+    top: 268px
+}
+.map .a_vodnjyji_stadion {
+    width: 134px;
+    left: 479px;
+    top: 261px;
+    height: 32px
+}
+.map .a_vojikovskaya {
+    width: 111px;
+    left: 479px;
+    top: 383px
+}
+.map .a_volzhskaya {
+    width: 86px;
+    left: 1177px;
+    top: 1467px
+}
+.map .a_yasenevo {
+    width: 76px;
+    left: 528px;
+    top: 1701px
+}
+.map .a_uninskaja_alleja {
+width: 60px;
+left: 192px;
+top: 1120px
+}
+.map .a_ulica_gorchakova {
+    width: 105px;
+    left: 405px;
+    top: 1890px;
+    height: 44px
+}
+.map .a_bulvar_admirala_ushakova {
+    width: 97px;
+    height: 72px;
+    left: 516px;
+    top: 1890px
+}
+.map .a_ulitca_skobelevskaya {
+    width: 132px;
+    height: 46px;
+    left: 622px;
+    top: 1890px
+}
+.map .a_ulica_starokachalovskaja {
+    width: 191px;
+    height: 33px;
+    left: 499px;
+    top: 1830px
+}
+.map .a_vystavochnaja {
+width: 79px;
+left: 185px;
+top: 470px
+}
+.map .a_lermontovskiy_prospekt {
+    width: 134px;
+    height: 51px;
+    left: 1392px;
+    top: 1456px;
+}
+.map .a_myakinino {
+    width: 92px;
+    left: 89px;
+    top: 517px
+}
+.map .a_pyatnickoe_shosse {
+    width: 107px;
+    height: 44px;
+    left: 87px;
+    top: 374px
+}
+.map .a_novoyasenevskaya {
+    width: 156px;
+    left: 549px;
+    top: 1734px
+}
+.map .a_borisovo {
+    width: 94px;
+    left: 1175px;
+    top: 1680px
+}
+.map .a_shipilovskaja {
+    width: 138px;
+    left: 1175px;
+    top: 1735px
+}
+.map .a_zjablikovo {
+    width: 110px;
+    left: 1175px;
+    top: 1779px
+}
+.s_aviamotornaya {
+    top: 849px;
+    left: 1298px
+}
+.s_ajeroport {
+    top: 480px;
+    left: 458px
+}
+.s_akademicheskaya {
+    top: 1409px;
+    left: 508px
+}
+.s_aleksandrovskii-sad {
+    left: 689px;
+    top: 959px
+}
+.s_alekseevskaya {
+    left: 1004px;
+    top: 451px
+}
+.s_altufqevo {
+    left: 736px;
+    top: 138px
+}
+.s_annino {
+    left: 723px;
+    top: 1797px
+}
+.s_arbatskaya-arbatsko-pokrovskaya {
+left: 433px;
+top: 543px
+}
+.s_arbatskaya-filevskaya {
+    left: 625px;
+    top: 892px
+}
+.s_avtozavodskaya {
+    left: 938px;
+    top: 1352px
+}
+.s_technopark {
+    left: 939px;
+    top: 1449px
+}
+.s_babushkinskaya {
+    left: 1005px;
+    top: 184px
+}
+.s_bagrationovskaya {
+    left: 86px;
+    top: 965px
+}
+.s_barrikadnaya {
+    left: 505px;
+    top: 776px;
+}
+.s_baumanskaya {
+    left: 1185px;
+    top: 736px
+}
+.s_begovaya {
+    left: 391px;
+    top: 725px
+}
+
+.s_belorysskaya-kolcevaya {
+left: 539px;
+top: 672px;
+}
+.s_tretqyakovskaya {
+    left: 905px;
+    top: 1041px
+}
+.s_tretyakovskaya-kalininskaya {
+    left: 925px;
+    top: 1060px
+}
+.s_smolenskaya-arbatsko-pokrovskaya {
+left: 353px;
+top: 543px
+}
+.s_kyncevskaya-arbatsko-pokrovskaya {
+left: 25px;
+top: 356px
+}
+.s_kyncevskaya-filevskaya {
+    left: 85px;
+    top: 743px
+}
+.s_bulvar_rokossovskogo {
+    left: 1232px;
+    top: 428px
+}
+.s_bulvar_rokossovskogo_mck {
+    left: 1177px;
+    top: 429px
+}
+
+.s_belokamennaya {
+    left: 1125px;
+    top: 388px
+}
+
+.s_kitai-gorod-tagansko-krasn {
+    left: 1000px;
+    top: 850px
+}
+.s_kitai-gorod-kalyjsko-rijskaya {
+    left: 974px;
+    top: 850px
+}
+.s_kievskaya-arbatsko-pokrovskaya {
+    left: 444px;
+    top: 930px
+}
+.s_kievskaya-filevskaya {
+    left: 444px;
+    top: 882px
+}
+.s_kievskaya-kolcevaya {
+    left: 484px;
+    top: 906px
+}
+.s_ulitca_akademika_yangelya {
+    left: 723px;
+    top: 1762px
+}
+.s_volgogradskiji_prospekt {
+    left: 1282px;
+    top: 1131px
+}
+.s_taganskaya_kolco {
+    left: 1108px;
+    top: 996px
+}
+.s_taganskaya {
+    left: 1129px;
+    top: 977px
+}
+.s_smolenskaya-filevskaya {
+    left: 561px;
+    top: 877px
+}
+.s_prospekt_vernadskogo {
+    left: 314px;
+    top: 1361px
+}
+.s_universitet {
+    left: 315px;
+    top: 1305px
+}
+.s_prospekt-mira {
+    left: 937px;
+    top: 557px
+}
+.s_prospekt-mira-kolcevaya {
+left: 612px;
+top: 269px
+}
+.s_ylica-1905-goda {
+left: 224px;
+top: 386px
+}
+.s_park-kyltyri-kolcevaya {
+left: 354px;
+top: 652px
+}
+.s_park-kyltyri {
+    left: 517px;
+    top: 1024px
+}
+.s_komsomolskaya-kolcevaya {
+    left: 1065px;
+    top: 654px
+}
+.s_komsomolskaya {
+left: 716px;
+top: 319px
+}
+.s_bulqvar_dmitriya_donskogo {
+    left: 724px;
+    top: 1829px
+}
+.s_preobrazhenskaya_ploschadq {
+    left: 1176px;
+    top: 517px
+}
+.s_petrovskorazumovskaya {
+    left: 713px;
+    top: 328px
+}
+.s_petrovskorazumovskaya_2 {
+    left: 713px;
+    top: 353px;
+}
+.s_paveleckaya-kolcevaya {
+    left: 953px;
+    top: 1155px
+}
+.s_paveleckaya {
+left: 626px;
+top: 715px
+}
+.s_oktyabrskaya {
+    left: 617px;
+    top: 1126px;
+}
+.s_oktyabrskaya-kolcevaya {
+left: 410px;
+top: 696px
+}
+.s_nahimovskiji_prospekt {
+    left: 723px;
+    top: 1526px
+}
+.s_biblioteka-im-lenina {
+    left: 707px;
+    top: 990px
+}
+.s_sretenskii-bylvar {
+    width: 102px;
+    height: 45px;
+    left: 960px;
+    top: 692px;
+}
+.s_vorobqyevjy_gorjy {
+    left: 315px;
+    top: 1247px
+}
+.s_volokolamskaya {
+    left: 67px;
+    top: 478px
+}
+.s_lavyanskii-bylvar {
+left: 14px;
+top: 558px
+}
+.s_bitcevskii-park {
+    left: 528px;
+    top: 1769px
+}
+.s_lesoparkovaya {
+    left: 620px;
+    top: 1768px
+}
+.s_belyaevo {
+    left: 507px;
+    top: 1576px
+}
+.s_bibirevo {
+    left: 738px;
+    top: 181px
+}
+.s_borovitckaya {
+    left: 655px;
+    top: 958px
+}
+.s_buninskaya_alleya {
+    left: 309px;
+    top: 1870px
+}
+.s_botanicheskii-sad {
+    left: 1005px;
+    top: 278px
+}
+.s_almaatinskaya {
+    left: 1271px;
+    top: 1819px
+}
+.s_bratislavskaya {
+    left: 1156px;
+    top: 1575px
+}
+.s_tcaritcjyno {
+    left: 940px;
+    top: 1659px
+}
+.s_chehovskaya {
+    left: 728px;
+    top: 805px
+}
+.s_cherkizovskaya {
+    left: 1208px;
+    top: 485px
+}
+.s_chertanovskaya {
+    left: 724px;
+    top: 1661px
+}
+.s_chistjye_prudjy {
+    left: 977px;
+    top: 720px
+}
+.s_chkalovskaya {
+    left: 1096px;
+    top: 780px
+}
+.s_tcvetnoji_bulqvar {
+    left: 787px;
+    top: 667px
+}
+.s_delovoi-centr {
+    left: 331px;
+    top: 912px
+}
+.s_dinamo {
+    left: 457px;
+    top: 527px
+}
+.s_dmitrovskaya {
+    left: 646px;
+    top: 461px
+}
+.s_dobrininskaya {
+left: 474px;
+top: 721px
+}
+.s_domodedovskaya {
+    left: 939px;
+    top: 1762px
+}
+.s_dostoevskaya {
+    left: 811px;
+    top: 507px
+}
+.s_dubrovka {
+    left: 1154px;
+    top: 1271px
+}
+.s_jelektrozavodskaya {
+    left: 1219px;
+    top: 705px
+}
+.s_filyevskiji_park {
+    left: 86px;
+    top: 804px
+}
+.s_fili {
+    left: 86px;
+    top: 1000px
+}
+.s_frunzenskaya {
+    left: 419px;
+    top: 1078px
+}
+.s_izmajilovskaya {
+    left: 1371px;
+    top: 491px
+}
+.s_kahovskaya {
+    left: 703px;
+    top: 1599px
+}
+.s_kaluzhskaya {
+    left: 507px;
+    top: 1535px
+}
+.s_kantemirovskaya {
+    left: 939px;
+    top: 1604px
+}
+.s_kashirskaya-kahovskaja {
+    left: 958px;
+    top: 1573px
+}
+.s_kashirskaya-zamoskvoreckaja {
+left: 626px;
+top: 844px
+}
+.s_kojyhovskaya {
+    left: 1154px;
+    top: 1364px
+}
+.s_kolomenskaya {
+    left: 938px;
+    top: 1500px
+}
+.s_konqkovo {
+    left: 508px;
+    top: 1616px
+}
+.s_krasnie-vorota {
+    left: 1022px;
+    top: 675px
+}
+.s_krasnogvardejiskaya {
+    left: 1136px;
+    top: 1821px
+}
+.s_krasnopresnenskaya {
+    left: 486px;
+    top: 795px;
+}
+.s_krasnoselqskaya {
+    left: 1113px;
+    top: 583px
+}
+.s_krestyanskaya-zastava {
+    left: 1206px;
+    top: 1080px
+}
+.s_krjylatskoe {
+    left: 68px;
+    top: 606px
+}
+.s_kropotkinskaya {
+    left: 623px;
+    top: 1025px
+}
+.s_kyrskaya {
+    left: 1128px;
+    top: 793px
+}
+.s_kyrskaya-kolcevaya {
+left: 762px;
+top: 452px
+}
+.s_kytyzovskaya {
+left: 262px;
+top: 1035px;
+}
+.s_kuzqminki {
+    left: 1371px;
+    top: 1249px
+}
+.s_kyzneckii-most {
+    left: 883px;
+    top: 775px
+}
+.s_leninskiji_prospekt {
+    left: 505px;
+    top: 1321px
+}
+.s_lyublino {
+    left: 1155px;
+    top: 1522px
+}
+.s_lubyanka {
+    left: 894px;
+    top: 801px
+}
+.s_marina_roshcha {
+    left: 812px;
+    top: 472px
+}
+.s_marino {
+    left: 1156px;
+    top: 1631px
+}
+.s_marksistskaya {
+    left: 1141px;
+    top: 1008px
+}
+.s_mayakovskaya {
+    left: 588px;
+    top: 690px
+}
+.s_medvedkovo {
+    left: 1003px;
+    top: 138px
+}
+.s_mejdynarodnaya {
+left: 171px;
+top: 451px
+}
+.s_mendeleevskaya {
+    left: 696px;
+    top: 577px
+}
+.s_mitino {
+    left: 67px;
+    top: 434px
+}
+.s_molodyezhnaya {
+    left: 69px;
+    top: 648px
+}
+.s_nagatinskaya {
+    left: 724px;
+    top: 1455px
+}
+.s_nagornaya {
+    left: 724px;
+    top: 1487px
+}
+.s_novjye_cheryemushki {
+    left: 508px;
+    top: 1495px
+}
+.s_novogireevo {
+    left: 1432px;
+    top: 718px
+}
+.s_novokosino {
+    left: 1459px;
+    top: 691px
+}
+.s_novokuznetckaya {
+    left: 939px;
+    top: 1026px
+}
+.s_novoslobodskaya {
+    left: 696px;
+    top: 550px
+}
+.s_ohotnii-ryad {
+left: 537px;
+top: 497px
+}
+.s_oktyabrqskoe_pole {
+    left: 265px;
+    top: 554px
+}
+.s_orehovo {
+    left: 939px;
+    top: 1710px
+}
+.s_otradnoe {
+    left: 739px;
+    top: 222px
+}
+.s_park-pobedi-2 {
+    left: 153px;
+    top: 1115px
+}
+.s_park_pobedjy {
+    left: 172px;
+    top: 1097px
+}
+.s_partizanskaya {
+    left: 1334px;
+    top: 585px
+}
+.s_pechatniki {
+    left: 1154px;
+    top: 1414px
+}
+.s_perovo {
+    left: 1401px;
+    top: 750px
+}
+.s_pervomajiskaya {
+    left: 1371px;
+    top: 450px
+}
+.s_pionerskaya {
+    left: 86px;
+    top: 770px
+}
+.s_planernaya {
+    left: 266px;
+    top: 218px
+}
+.s_ploschadq_ilqicha {
+    left: 1244px;
+    top: 903px
+}
+.s_ploshad-revolucii {
+    left: 833px;
+    top: 929px;
+}
+.s_polezhaevskaya {
+    left: 333px;
+    top: 662px
+}
+.s_polyanka {
+    left: 724px;
+    top: 1128px
+}
+.s_prazhskaya {
+    left: 723px;
+    top: 1727px
+}
+.s_profsoyuznaya {
+    left: 507px;
+    top: 1453px
+}
+.s_proletarskaya {
+    left: 1231px;
+    top: 1080px
+}
+.s_zhulebino {
+    left: 1369px;
+    top: 1540px
+}
+.s_kotelniki {
+    left: 1370px;
+    top: 1603px
+}
+.s_pushkinskaya {
+left: 712px;
+top: 776px;
+}
+.s_rechnoji_vokzal {
+    left: 456px;
+    top: 217px
+}
+.s_rizhskaya {
+    left: 993px;
+    top: 478px
+}
+.s_rimskaya {
+    left: 1218px;
+    top: 905px
+}
+.s_ryazanskiji_prospekt {
+    left: 1371px;
+    top: 1315px
+}
+.s_savyelovskaya {
+    left: 645px;
+    top: 496px
+}
+.s_semyenovskaya {
+    left: 1246px;
+    top: 675px
+}
+.s_serpyhovskaya {
+    left: 722px;
+    top: 1200px
+}
+.s_sevastopolskaya {
+    left: 724px;
+    top: 1619px
+}
+.s_shabolovskaya {
+    left: 568px;
+    top: 1204px
+}
+.s_schelkovskaya {
+    left: 1369px;
+    top: 375px
+}
+.s_shodnenskaya {
+    left: 266px;
+    top: 255px
+}
+
+.s_shosse_jentuziastov {
+    left: 1323px;
+    top: 826px
+}
+
+.s_schukinskaya {
+    left: 267px;
+    top: 377px
+}
+.s_sokol {
+    left: 458px;
+    top: 445px
+}
+.s_sokolqniki {
+    left: 1143px;
+    top: 549px
+}
+.s_sportivnaya {
+    left: 354px;
+    top: 1142px
+}
+.s_strogino {
+    left: 67px;
+    top: 564px
+}
+.s_stydencheskaya {
+    left: 304px;
+    top: 996px
+}
+.s_sviblovo {
+    left: 1005px;
+    top: 230px
+}
+.s_suharevskaya {
+    left: 902px;
+    top: 625px
+}
+.s_teatralnaya {
+    left: 822px;
+    top: 905px
+}
+.s_tekstilqschiki {
+    left: 1346px;
+    top: 1192px
+}
+.s_tyepljyji_stan {
+    left: 507px;
+    top: 1660px
+}
+.s_timiryazevskaya {
+    left: 644px;
+    top: 416px
+}
+.s_trubnaya {
+    left: 811px;
+    top: 656px
+}
+.s_tverskaya {
+    left: 698px;
+    top: 803px
+}
+.s_tulqskaya {
+    left: 723px;
+    top: 1291px
+}
+.s_tyrgenevskaya {
+    left: 946px;
+    top: 718px;
+}
+.s_tushinskaya {
+    left: 266px;
+    top: 296px
+}
+.s_yugozapadnaya {
+    left: 315px;
+    top: 1433px
+}
+.s_spartak {
+    top: 335px;
+    left: 266px
+}
+.s_yuzhnaya {
+    left: 723px;
+    top: 1695px
+}
+.s_varshavskaya {
+    left: 845px;
+    top: 1595px
+}
+.s_vdnh {
+    left: 1003px;
+    top: 417px
+}
+.s_vjyhino {
+    left: 1369px;
+    top: 1395px
+}
+.s_vladikino {
+    left: 738px;
+    top: 279px
+}
+.s_vodnjyji_stadion {
+    left: 457px;
+    top: 264px
+}
+.s_vojikovskaya {
+    left: 457px;
+    top: 381px
+}
+.s_volzhskaya {
+    left: 1154px;
+    top: 1469px
+}
+.s_yasenevo {
+    left: 507px;
+    top: 1700px
+}
+.s_uninskaja_alleja {
+left: 192px;
+top: 1120px
+}
+.s_ulica_gorchakova {
+    left: 418px;
+    top: 1872px
+}
+.s_bulvar_admirala_ushakova {
+    left: 528px;
+    top: 1873px
+}
+.s_ulitca_skobelevskaya {
+    left: 632px;
+    top: 1873px
+}
+.s_ulica_starokachalovskaja {
+    left: 695px;
+    top: 1829px
+}
+.s_vystavochnaja {
+left: 171px;
+top: 471px
+}
+.s_lermontovskiy_prospekt {
+    left: 1370px;
+    top: 1460px
+}
+.s_myakinino {
+    left: 67px;
+    top: 518px
+}
+.s_pyatnickoe_shosse {
+    left: 66px;
+    top: 378px
+}
+.s_novoyasenevskaya {
+    left: 527px;
+    top: 1741px
+}
+.s_borisovo {
+    left: 1155px;
+    top: 1682px
+}
+.s_shipilovskaja {
+    left: 1155px;
+    top: 1735px
+}
+.s_zjablikovo {
+    left: 1154px;
+    top: 1801px
+}
+.s_slavyanskiji_bulqvar {
+    left: 116px;
+    top: 1101px
+}
+.map .a_buninskaya_alleya {
+    width: 96px;
+    left: 299px;
+    top: 1890px;
+    height: 48px
+}
+
+.metro-select.checked {
+display: block;
+z-index: 3
+}
+.map .a_kitai-gorod-kalyjsko-rijskaya,
+.map .a_kitai-gorod-tagansko-krasn {
+    left: 916px;
+    top: 869px;
+    width: 108px
+}
+
+
+
+
+
+
+
+.map .a_rostokino {
+    left: 1078px;
+    top: 328px;
+    width: 114px;
+    height: 30px
+}
+
+.s_rostokino {
+    left: 1066px;
+    top: 354px
+}
+
+
+
+.map .a_lokomotiv {
+    left: 1260px;
+    top: 484px;
+    width: 100px;
+    height: 30px
+}
+
+
+.s_lokomotiv {
+    left: 1236px;
+    top: 484px
+}
+
+.map .a_sokolinaya_gora {
+    left: 1368px;
+    top: 668px;
+    width: 89px;
+    height: 57px
+}
+.s_sokolinaya_gora {
+    left: 1347px;
+    top: 673px
+}
+
+
+.s_shosse_jentuziastov_mck {
+    left: 1378px;
+    top: 824px
+}
+
+.map .a_andronovka {
+    left: 1396px;
+    top: 931px;
+    width: 127px;
+    height: 32px
+}
+.s_andronovka {
+    left: 1375px;
+    top: 933px
+}
+
+.map .a_nizhegorod {
+    left: 1390px;
+    top: 980px;
+    width: 134px;
+    height: 32px
+}
+.s_nizhegorod {
+    left: 1369px;
+    top: 973px
+}
+
+.map .a_novohohl {
+    left: 1374px;
+    top: 1032px;
+    width: 146px;
+    height: 32px
+}
+.s_novohohl {
+    left: 1356px;
+    top: 1026px
+}
+
+
+.map .a_ugresh {
+    left: 1236px;
+    top: 1269px;
+    width: 98px;
+    height: 32px
+}
+.s_ugresh {
+    left: 1219px;
+    top: 1252px
+}
+
+.map .a_avtozavodskaya_mck {
+    width: 140px;
+    left: 978px;
+    top: 1412px
+}
+.s_avtozavodskaya_mck {
+    left: 960px;
+    top: 1402px
+}
+
+.map .a_gagarina {
+    width: 114px;
+    left: 544px;
+    top: 1330px;
+    height: 30px;
+}
+.s_gagarina {
+    left: 520px;
+    top: 1343px
+}
+
+
+.map .a_krymskaya {
+    width: 94px;
+    left: 670px;
+    top: 1369px;
+}
+.s_krymskaya {
+    left: 660px;
+    top: 1401px
+}
+
+.map .a_vkotly {
+    width: 85px;
+    left: 773px;
+    top: 1376px;
+    height: 45px;
+}
+.s_vkotly {
+    left: 805px;
+    top: 1421px
+}
+
+.map .a_zil {
+    width: 56px;
+    left: 870px;
+    top: 1384px;
+}
+.s_zil {
+    left: 904px;
+    top: 1413px
+}
+
+.map .a_luzha {
+    width: 95px;
+    left: 377px;
+    top: 1194px;
+}
+.s_luzha {
+    left: 355px;
+    top: 1197px
+}
+
+.s_kytyzovskaya_mck {
+    left: 261px;
+    top: 1009px;
+}
+
+.map .a_mezhdunarodnaya_mck {
+    left: 135px;
+    top: 915px;
+    width: 113px;
+    height: 46px;
+}
+
+.s_mezhdunarodnaya_mck {
+    left: 242px;
+    top: 901px
+}
+
+
+.map .a_shelepiha {
+    left: 256px;
+    top: 814px;
+    width: 105px;
+    height: 34px;
+}
+
+.s_shelepiha {
+    left: 244px;
+    top: 796px
+}
+
+
+.map .a_horoshevo {
+    left: 176px;
+    top: 665px;
+    width: 101px;
+    height: 34px;
+}
+
+.s_horoshevo {
+    left: 271px;
+    top: 678px
+}
+
+
+.map .a_streshnevo {
+    left: 292px;
+    top: 456px;
+    width: 101px;
+    height: 34px;
+}
+
+.s_streshnevo {
+    left: 388px;
+    top: 477px
+}
+
+
+.map .a_balt {
+    left: 334px;
+    top: 421px;
+    width: 105px;
+    height: 34px;
+}
+
+.s_balt {
+    left: 436px;
+    top: 433px
+}
+
+.map .a_lihobory {
+    left: 505px;
+    top: 303px;
+    width: 114px;
+    height: 34px;
+}
+
+.s_lihobory {
+    left: 610px;
+    top: 329px
+}
+
+.map .a_koptevo {
+    left: 477px;
+    top: 332px;
+    width: 80px;
+    height: 34px;
+}
+
+.s_koptevo {
+    left: 546px;
+    top: 357px;
+}
+
+
+.map .a_okruzhnaya {
+    left: 603px;
+    top: 277px;
+    width: 107px;
+    height: 34px;
+}
+
+.s_okruzhnaya {
+    left: 697px;
+    top: 303px
+}
+
+.s_vladikino_mck {
+    left: 757px;
+    top: 298px
+}
+
+.map .a_butyrskaya {
+    width: 127px;
+    left: 834px;
+    top: 430px
+}
+.s_butyrskaya {
+    left: 812px;
+    top: 442px
+}
+
+
+.map .a_fonvizinskaya {
+    width: 128px;
+    left: 801px;
+    top: 361px;
+}
+.s_fonvizinskaya {
+    left: 778px;
+    top: 374px;
+}

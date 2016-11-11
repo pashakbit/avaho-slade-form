@@ -1,0 +1,2 @@
+jQuery.fn.center=function(c){var d=jQuery.extend({vertical:!0,horizontal:!0},c);return this.each(function(){var b=$(this).parent(),a=b.css("position"),e="relative"==a||"absolute"==a||"fixed"==a,a={position:"absolute"};if(d.vertical){var c=e?Math.round(b.height()/2):Math.round($(window).height()/2)+$(document).scrollTop();a.top=c-Math.round($(this).height()/2)+"px"}d.horizontal&&(b=e?Math.round(b.width()/2):Math.round($(window).width()/2)+$(document).scrollLeft(),a.left=b-Math.round($(this).width()/
+2)+"px");$(this).css(a)})};
