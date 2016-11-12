@@ -34,3 +34,15 @@
 .branding__button {
 	z-index: 101;
 }
+
+.content_overlay {
+	position: absolute;
+	display: none;
+	top: 444px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	z-index: 500;
+	background: rgba(0, 0, 0, .7);
+}

@@ -767,6 +767,11 @@ $('#location_list_btn').click(function() {
 $('#extendBtn').click(function () {
 	$(this).find('i.extended-drop').toggleClass('fa-angle-down fa-angle-right');
     $('#extendedLink').parent().toggleClass('in');
+    if ($('#extendedLink').parent().hasClass('in')) {
+        $('.content_overlay').fadeIn(300);
+    } else {
+        $('.content_overlay').fadeOut(300);
+    }
 });
 
 /*------------------------------------------------------------------------------------------*/
@@ -1502,6 +1507,8 @@ $(function() {
 
 		     </div>
 	    </div>
+
+        <div class="content_overlay">&nbsp;</div>
 	    		<script src="http://cdn.jsdelivr.net/jquery.slick/1.5.5/slick.min.js"></script>
 		<script>
 		$(document).ready(function(){
